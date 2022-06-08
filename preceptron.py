@@ -4,6 +4,9 @@ class Preceptron():
 		self.alpha = alpha
 		self.y_in = None
 		self.astaneh = astaneh
+		self.X = None
+		self.W = None
+		self.bias = None
 
 	def y_function(self):
 		if self.y_in > 0:
