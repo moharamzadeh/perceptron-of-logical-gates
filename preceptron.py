@@ -2,15 +2,12 @@ class Preceptron():
 	def __init__(self, alpha):
 		self.step = 0
 		self.alpha = alpha
-		self.X = None
-		self.W = None
-		self.bias = None
 
 	def setInput(self, vector):
-		pass
+		self.X = vector
 
 	def setWeight(self, vector):
-		pass
+		self.W = vector
 
 	def setBias(self, value):
 		self.bias = value
