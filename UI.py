@@ -32,11 +32,12 @@ class Ui_window(object):
 		self.txtW2.setObjectName("txtW2")
 
 		self.comboBox = QtWidgets.QComboBox(window)
-		self.comboBox.setGeometry(QtCore.QRect(140, 160, 61, 33))
+		self.comboBox.setGeometry(QtCore.QRect(115, 160, 85, 33))
 		self.comboBox.setObjectName("comboBox")
+		self.comboBox.addItems(['AND', 'OR', 'NOR', 'NAND'])
 
 		self.btnMohasebeh = QtWidgets.QPushButton(window)
-		self.btnMohasebeh.setGeometry(QtCore.QRect(140, 200, 61, 33))
+		self.btnMohasebeh.setGeometry(QtCore.QRect(115, 200, 85, 33))
 		self.btnMohasebeh.setObjectName("btnMohasebeh")
 
 		self.txtOutput = QtWidgets.QTextBrowser(window)
