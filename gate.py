@@ -4,12 +4,14 @@ class Gate():
 
 	def __insertTable(self):
 		type = self.type
+		self.states = [[1,1], [1,0], [0,1], [0,0]]
+		target = None
 
 		if type == 'AND':
-			pass
+			target = [1, 0, 0, 0]
 		elif type == 'OR':
-			pass
+			target = [1, 1, 1, 0]
 		elif type == 'NOR':
-			pass
+			target = [0, 0, 0, 1]
 		elif type == 'NAND':
-			pass
+			target = [0, 1, 1, 0]
