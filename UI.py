@@ -86,7 +86,7 @@ class Ui_window(object):
 		self.lblW2.setText(_translate("window", "w2:"))
 		self.btnMohasebeh.setText(_translate("window", "محاسبه"))
 
-if __name__ == "__main__":
+def runUI():
 	import sys
 	app = QtWidgets.QApplication(sys.argv)
 	window = QtWidgets.QWidget()
