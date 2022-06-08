@@ -36,7 +36,7 @@ class Preceptron():
 		return newW
 
 	def __y_function_in_step(self):
-		if self.__y_in_function() > 0:
+		if self.__y_in_function_in_step() > 0:
 			return 1
 		return 0
 
