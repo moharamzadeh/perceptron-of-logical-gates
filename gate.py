@@ -11,4 +11,5 @@ class Gate():
 			pass
 		elif type == 'NOR':
 			pass
-		elif type == 'NAND'
+		elif type == 'NAND':
+			pass
