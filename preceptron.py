@@ -10,7 +10,6 @@ class Preceptron():
 			return 1
 		return 0
 
-	def y_in_function(self, bayas, X, W):
-		iteration = len(X)
-		for i in iteration:
-			pass
+	def y_in_function(self):
+		y_in = self.bias + (self.W[0]*self.X[0] + self.W[1]*self.X[1])
+		return y_in 
