@@ -1,9 +1,7 @@
 class Preceptron():
-	def __init__(self, alpha, astaneh):
+	def __init__(self, alpha):
 		self.step = 0
 		self.alpha = alpha
-		self.y_in = None
-		self.astaneh = astaneh
 		self.X = None
 		self.W = None
 		self.bias = None
