@@ -87,11 +87,6 @@ class Ui_window(object):
 		self.lblW2 = QtWidgets.QLabel(window)
 		self.lblW2.setGeometry(QtCore.QRect(10, 210, 31, 17))
 		self.lblW2.setObjectName("lblW2")
-		
-		self.lblError = QtWidgets.QLabel(window)
-		self.lblError.setGeometry(QtCore.QRect(120, 180, 60, 17))
-		self.lblError.setText("")
-		self.lblError.setObjectName("lblError")
 
 		self.retranslateUi(window)
 		QtCore.QMetaObject.connectSlotsByName(window)
@@ -112,7 +107,7 @@ class Ui_window(object):
 
 	def retranslateUi(self, window):
 		_translate = QtCore.QCoreApplication.translate
-		window.setWindowTitle(_translate("window", "Form"))
+		window.setWindowTitle(_translate("window", "گیت‌های منطقی"))
 		self.lblX.setText(_translate("window", "x:"))
 		self.lblY.setText(_translate("window", "y:"))
 		self.lblAlpha.setText(_translate("window", "نرخ یادگیری"))
@@ -121,7 +116,6 @@ class Ui_window(object):
 		self.lblW1.setText(_translate("window", "w1:"))
 		self.lblW2.setText(_translate("window", "w2:"))
 		self.btnMohasebeh.setText(_translate("window", "محاسبه"))
-
 
 if __name__ == "__main__":
 	import sys
