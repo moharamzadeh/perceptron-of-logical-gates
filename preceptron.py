@@ -10,6 +10,7 @@ class Preceptron():
 
 		return changeW
 
+	def changeBias(self,):
 		changeBias = self.__errorStep()
 
 	def y_function(self):
