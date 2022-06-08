@@ -1,10 +1,11 @@
 class Gate():
 	def __init__(self, type):
+		self.states = [[1,1], [1,0], [0,1], [0,0]]
 		self.type = type
+		self.__insertTable(type)
 
 	def __insertTable(self):
 		type = self.type
-		self.states = [[1,1], [1,0], [0,1], [0,0]]
 
 		if type == 'AND':
 			self.target = [1, 0, 0, 0]
