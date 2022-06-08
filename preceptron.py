@@ -8,6 +8,8 @@ class Preceptron():
 		self.W = weitghts
 		self.bias = 0
 
+	def changeW(self, X):
+		changeW = [self.__errorStep*X[0], self.__errorStep*X[1]]
 		return changeW
 
 	def changeBias(self,):
