@@ -8,6 +8,12 @@ class Preceptron():
 		self.W = None
 		self.bias = None
 
+	def setInput(self, vector):
+		pass
+
+	def setWeight(self, vector):
+		pass
+
 	def y_function(self):
 		if self.y_in > 0:
 			return 1
