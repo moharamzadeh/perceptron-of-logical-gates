@@ -1,2 +1,4 @@
 /UI
 /.qt_for_python/uic
+/__pycache__
+test.py
