@@ -1,4 +1,14 @@
-from preceptron import *
+class Gate():
+	def __init__(self, type):
+		self.type = type
 
-class Gate(Preceptron):
-	pass
+	def __insertTable(self):
+		type = self.type
+
+		if type == 'AND':
+			pass
+		elif type == 'OR':
+			pass
+		elif type == 'NOR':
+			pass
+		elif type == 'NAND'
