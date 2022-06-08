@@ -8,8 +8,7 @@ class Preceptron():
 		self.W = weitghts
 		self.bias = 0
 
-	def setInput(self, vector):
-		self.X = vector
+		return changeW
 
 	def setWeight(self, vector):
 		self.W = vector
