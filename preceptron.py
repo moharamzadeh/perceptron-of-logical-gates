@@ -9,7 +9,14 @@ class Preceptron():
 		self.bias = 0
 
 	def nextIteration(self):
-		pass
+		error = self.__error_in_step()
+		if error != 0:
+			self.__changeW_in_step()
+			self.__changeBias_in_step()
+			self.step =+ 1
+			return True
+		self.step += 1
+		return False
 
 	def __changeW_in_step(self):
 		newW = self.newW_in_step()
