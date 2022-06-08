@@ -7,8 +7,8 @@ def main(gate, alpha, w1, w2):
 		break_step = 0
 		if break_step > 4:
 			break
-		shart = prec.nextIteration()
-		if not shart:
+		error_nadashtan = prec.nextIteration()
+		if error_nadashtan:
 			break_step += 1
 	
 	return prec.W, prec.bias
