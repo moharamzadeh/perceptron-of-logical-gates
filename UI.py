@@ -31,7 +31,7 @@ class Ui_window(object):
 		self.txtOutput.setGeometry(QtCore.QRect(210, 10, 211, 221))
 
 		font = QtGui.QFont()
-		font.setPointSize(8)
+		font.setPointSize(14)
 
 		self.txtOutput.setFont(font)
 
@@ -64,8 +64,7 @@ class Ui_window(object):
 	def clickBtnMohasebeh(self):
 		answer = main(gate=self.comboBox.currentText(), alpha=float(self.txtAlpha.text()), w1=float(self.txtW1.text()), w2=float(self.txtW2.text()))
 		matn = 'w1: ' + str(answer[0][0]) + '\n' + 'w2: ' + str(answer[0][1]) + '\n' + 'bias: ' + str(answer[1])
-		print(matn)
-		# print(answer)
+		self.txtOutput.setText(matn)
 
 	def clickBtnClear(self):
 		self.__clearAllText()
