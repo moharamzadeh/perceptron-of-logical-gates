@@ -1,6 +1,6 @@
 class Gate():
 	def __init__(self, type):
-		self.states = [[1,1], [1,0], [0,1], [0,0]]
+		self.states = [(1,1), (1,0), (0,1), (0,0)]
 		self.type = type
 		self.__insertTarget(type)
 
