@@ -2,7 +2,7 @@ class Gate():
 	def __init__(self, type):
 		self.states = [(1,1), (1,0), (0,1), (0,0)]
 		self.type = type
-		self.__insertTarget(type)
+		self.__insertTarget()
 
 	def __insertTarget(self):
 		type = self.type
@@ -17,3 +17,9 @@ class Gate():
 			self.target = [0, 1, 1, 0]
 		else:
 			raise 'state not exist'
+
+	def getState(self, number):
+		return self.states[number]
+
+	def getTarget(self, number):
+		return self.target[number]
