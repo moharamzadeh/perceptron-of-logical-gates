@@ -2,6 +2,8 @@ class Preceptron():
 	def __init__(self, alpha):
 		self.step = 0
 		self.alpha = alpha
+		self.W = [0, 0]
+		self.bias = 0
 
 	def setInput(self, vector):
 		self.X = vector
