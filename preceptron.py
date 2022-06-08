@@ -14,6 +14,9 @@ class Preceptron():
 	def setWeight(self, vector):
 		pass
 
+	def setBias(self, value):
+		self.bias = value
+
 	def y_function(self):
 		if self.y_in > 0:
 			return 1
