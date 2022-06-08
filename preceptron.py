@@ -14,8 +14,10 @@ class Preceptron():
 			self.__changeW_in_step()
 			self.__changeBias_in_step()
 			self.step =+ 1
+			self.inputIndex = self.step % 4
 			return True
 		self.step += 1
+		self.inputIndex = self.step % 4
 		return False
 
 	def __changeW_in_step(self):
@@ -23,7 +25,7 @@ class Preceptron():
 		self.W = [self.W[0] + newW[0]*self.alpha, self.W[1] + newW[1]*self.alpha]
 
 	def __changeBias_in_step(self):
-		changeBias = self.__errorStep()*self.alpha
+		changeBias = self.__error_in_step()*self.alpha
 		return changeBias
 
 	def get_datas_in_step(self):
