@@ -120,6 +120,7 @@ class Ui_window(object):
 		self.btnClear.setText(_translate("window", "C"))
 		self.lblW1.setText(_translate("window", "w1:"))
 		self.lblW2.setText(_translate("window", "w2:"))
+		self.btnMohasebeh.setText(_translate("window", "محاسبه"))
 
 
 if __name__ == "__main__":
