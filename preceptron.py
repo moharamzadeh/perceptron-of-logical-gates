@@ -14,6 +14,7 @@ class Preceptron():
 
 	def changeBias(self,):
 		changeBias = self.__errorStep()
+		return changeBias
 
 	def y_function(self):
 		if self.__y_in_function() > 0:
