@@ -23,7 +23,7 @@ class Preceptron():
 		self.W = [self.W[0] + newW[0]*self.alpha, self.W[1] + newW[1]*self.alpha]
 
 	def __changeBias_in_step(self):
-		changeBias = self.__errorStep()
+		changeBias = self.__errorStep()*self.alpha
 		return changeBias
 
 	def get_datas_in_step(self):
