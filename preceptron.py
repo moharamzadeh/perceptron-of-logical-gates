@@ -10,11 +10,7 @@ class Preceptron():
 
 		return changeW
 
-	def setWeight(self, vector):
-		self.W = vector
-
-	def setBias(self, value):
-		self.bias = value
+		changeBias = self.__errorStep()
 
 	def y_function(self):
 		if self.__y_in_function() > 0:
