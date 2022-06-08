@@ -1,7 +1,6 @@
 class Preceptron():
 	def __init__(self, alpha, datas, targets, weitghts):
 		self.step = 0
-		self.inputIndex = self.step % 4
 		self.alpha = alpha
 		self.datas = datas
 		self.targets = targets
