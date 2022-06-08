@@ -6,12 +6,9 @@ class Preceptron():
 		self.astaneh = astaneh
 
 	def y_function(self):
-		if self.y_in > self.astaneh:
+		if self.y_in > 0:
 			return 1
-		elif self.y_in < (-1 * self.astaneh):
-			return -1
-		else:
-			return 0
+		return 0
 
 	def y_in_function(self, bayas, X, W):
 		iteration = len(X)
