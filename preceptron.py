@@ -23,5 +23,6 @@ class Preceptron():
 		y_in = self.bias + (self.W[0]*self.X[0] + self.W[1]*self.X[1])
 		return y_in
 
-	def __error(self, value, targetValue):
-		pass
+	def __error(self, targetValue):
+		err = targetValue - self.y_function()
+		return err
