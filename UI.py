@@ -1,4 +1,5 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
+from main import *
 
 class Ui_window(object):
 	def setupUi(self, window):
@@ -61,7 +62,7 @@ class Ui_window(object):
 		self.btnMohasebeh.clicked.connect(lambda: self.clickBtnMohasebeh())
 
 	def clickBtnMohasebeh(self):
-		pass
+		answer = main(self.comboBox.currentText())
 
 	def clickBtnClear(self):
 		self.__clearAllText()

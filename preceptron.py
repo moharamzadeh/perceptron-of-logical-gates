@@ -26,7 +26,7 @@ class Preceptron():
 
 	def __changeBias_in_step(self):
 		changeBias = self.__error_in_step()*self.alpha
-		return changeBias
+		self.bias = changeBias
 
 	def get_datas_in_step(self):
 		return self.__alldatas[self.inputIndex]
