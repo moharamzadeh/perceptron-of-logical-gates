@@ -58,6 +58,10 @@ class Ui_window(object):
 		QtCore.QMetaObject.connectSlotsByName(window)
 
 		self.btnClear.clicked.connect(lambda: self.clickBtnClear())
+		self.btnMohasebeh.clicked.connect(lambda: self.clickBtnMohasebeh())
+
+	def clickBtnMohasebeh(self):
+		pass
 
 	def clickBtnClear(self):
 		self.__clearAllText()
