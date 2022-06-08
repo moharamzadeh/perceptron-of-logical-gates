@@ -8,16 +8,25 @@ class Preceptron():
 		self.W = weitghts
 		self.bias = 0
 
-	def __changeW_in_step(self, X):
-		changeW = [self.__errorStep*X[0], self.__errorStep*X[1]]
-		return changeW
+	def nextIteration(self):
+		pass
 
-	def __changeBias_in_step(self,):
+	def __changeW_in_step(self):
+		newW = self.newW_in_step()
+		self.W = [self.W[0]+newW[0], self.W[1]+newW[1]]
+
+	def __changeBias_in_step(self):
 		changeBias = self.__errorStep()
 		return changeBias
 
+	def get_datas_in_step(self):
+		return self.__alldatas[self.inputIndex]
+
 	def newW_in_step(self):
-		pass
+		newW1 = self.__error_in_step()*self.get_datas_in_step()[0]
+		newW2 = self.__error_in_step()*self.get_datas_in_step()[1]
+		newW = [newW1, newW2]
+		return newW
 
 	def __y_function_in_step(self):
 		if self.__y_in_function() > 0:
