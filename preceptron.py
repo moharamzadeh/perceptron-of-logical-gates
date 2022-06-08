@@ -41,7 +41,8 @@ class Preceptron():
 		return 0
 
 	def __y_in_function_in_step(self):
-		y_in = self.bias + (self.W[0]*self.X[0] + self.W[1]*self.X[1])
+		X_data = self.get_datas_in_step()
+		y_in = self.bias + (self.W[0]*X_data[0] + self.W[1]*X_data[1])
 		return y_in
 
 	def __error_in_step(self):
