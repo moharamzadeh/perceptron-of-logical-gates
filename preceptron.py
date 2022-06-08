@@ -14,4 +14,6 @@ class Preceptron():
 			return 0
 
 	def y_in_function(self, bayas, X, W):
-		pass
+		iteration = len(X)
+		for i in iteration:
+			pass
