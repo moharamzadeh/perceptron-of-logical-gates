@@ -46,5 +46,5 @@ class Preceptron():
 		return y_in
 
 	def __error_in_step(self):
-		err = self.targets[self.inputIndex] - self.y_function()
+		err = self.targets[self.inputIndex] - self.__y_function_in_step()
 		return err
