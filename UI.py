@@ -10,27 +10,21 @@ class Ui_window(object):
 		font.setPointSize(10)
 		window.setFont(font)
 
-		self.txtX = QtWidgets.QLineEdit(window)
-		self.txtX.setGeometry(QtCore.QRect(30, 10, 31, 33))
-
-		self.txtY = QtWidgets.QLineEdit(window)
-		self.txtY.setGeometry(QtCore.QRect(100, 10, 31, 33))
-
 		self.txtAlpha = QtWidgets.QLineEdit(window)
-		self.txtAlpha.setGeometry(QtCore.QRect(100, 70, 41, 33))
+		self.txtAlpha.setGeometry(QtCore.QRect(100, 10, 41, 33))
 
 		self.txtW1 = QtWidgets.QLineEdit(window)
-		self.txtW1.setGeometry(QtCore.QRect(40, 160, 41, 33))
+		self.txtW1.setGeometry(QtCore.QRect(40, 100, 41, 33))
 
 		self.txtW2 = QtWidgets.QLineEdit(window)
-		self.txtW2.setGeometry(QtCore.QRect(40, 200, 41, 33))
+		self.txtW2.setGeometry(QtCore.QRect(40, 140, 41, 33))
 
 		self.comboBox = QtWidgets.QComboBox(window)
-		self.comboBox.setGeometry(QtCore.QRect(115, 160, 85, 33))
+		self.comboBox.setGeometry(QtCore.QRect(115, 100, 85, 33))
 		self.comboBox.addItems(['AND', 'OR', 'NOR', 'NAND'])
 
 		self.btnMohasebeh = QtWidgets.QPushButton(window)
-		self.btnMohasebeh.setGeometry(QtCore.QRect(115, 200, 85, 33))
+		self.btnMohasebeh.setGeometry(QtCore.QRect(115, 140, 85, 33))
 
 		self.txtOutput = QtWidgets.QTextBrowser(window)
 		self.txtOutput.setGeometry(QtCore.QRect(210, 10, 211, 221))
@@ -40,36 +34,25 @@ class Ui_window(object):
 
 		self.txtOutput.setFont(font)
 
-		self.lblX = QtWidgets.QLabel(window)
-		self.lblX.setGeometry(QtCore.QRect(10, 20, 21, 17))
-
-		self.lblY = QtWidgets.QLabel(window)
-		self.lblY.setGeometry(QtCore.QRect(80, 20, 21, 17))
-
 		self.lblAlpha = QtWidgets.QLabel(window)
-		self.lblAlpha.setGeometry(QtCore.QRect(10, 80, 71, 17))
-
-		self.line = QtWidgets.QFrame(window)
-		self.line.setGeometry(QtCore.QRect(10, 50, 151, 16))
-		self.line.setFrameShape(QtWidgets.QFrame.HLine)
-		self.line.setFrameShadow(QtWidgets.QFrame.Sunken)
+		self.lblAlpha.setGeometry(QtCore.QRect(10, 20, 71, 17))
 
 		self.line2 = QtWidgets.QFrame(window)
-		self.line2.setGeometry(QtCore.QRect(10, 110, 151, 16))
+		self.line2.setGeometry(QtCore.QRect(10, 50, 151, 16))
 		self.line2.setFrameShape(QtWidgets.QFrame.HLine)
 		self.line2.setFrameShadow(QtWidgets.QFrame.Sunken)
 
 		self.lblW = QtWidgets.QLabel(window)
-		self.lblW.setGeometry(QtCore.QRect(40, 130, 41, 17))
+		self.lblW.setGeometry(QtCore.QRect(12, 70, 40, 17))
 
 		self.btnClear = QtWidgets.QPushButton(window)
 		self.btnClear.setGeometry(QtCore.QRect(170, 10, 31, 33))
 
 		self.lblW1 = QtWidgets.QLabel(window)
-		self.lblW1.setGeometry(QtCore.QRect(10, 170, 31, 17))
+		self.lblW1.setGeometry(QtCore.QRect(10, 110, 31, 17))
 
 		self.lblW2 = QtWidgets.QLabel(window)
-		self.lblW2.setGeometry(QtCore.QRect(10, 210, 31, 17))
+		self.lblW2.setGeometry(QtCore.QRect(10, 150, 31, 17))
 
 		self.retranslateUi(window)
 		QtCore.QMetaObject.connectSlotsByName(window)
@@ -80,19 +63,15 @@ class Ui_window(object):
 		self.__clearAllText()
 
 	def __clearAllText(self):
-		self.txtX.clear()
-		self.txtY.clear()
 		self.txtAlpha.clear()
 		self.txtW1.clear()
 		self.txtW2.clear()
 		self.txtOutput.clear()
-		self.txtX.setFocus()
+		self.txtAlpha.setFocus()
 
 	def retranslateUi(self, window):
 		_translate = QtCore.QCoreApplication.translate
 		window.setWindowTitle(_translate("window", "گیت‌های منطقی"))
-		self.lblX.setText(_translate("window", "x:"))
-		self.lblY.setText(_translate("window", "y:"))
 		self.lblAlpha.setText(_translate("window", "نرخ یادگیری"))
 		self.lblW.setText(_translate("window", "وزن‌ها"))
 		self.btnClear.setText(_translate("window", "C"))
