@@ -31,6 +31,14 @@ class Ui_window(object):
 		self.txtW2.setGeometry(QtCore.QRect(40, 200, 41, 33))
 		self.txtW2.setObjectName("txtW2")
 
+		self.comboBox = QtWidgets.QComboBox(window)
+		self.comboBox.setGeometry(QtCore.QRect(140, 160, 61, 33))
+		self.comboBox.setObjectName("comboBox")
+
+		self.btnMohasebeh = QtWidgets.QPushButton(window)
+		self.btnMohasebeh.setGeometry(QtCore.QRect(140, 200, 61, 33))
+		self.btnMohasebeh.setObjectName("btnMohasebeh")
+
 		self.txtOutput = QtWidgets.QTextBrowser(window)
 		self.txtOutput.setGeometry(QtCore.QRect(210, 10, 211, 221))
 
@@ -87,6 +95,20 @@ class Ui_window(object):
 
 		self.retranslateUi(window)
 		QtCore.QMetaObject.connectSlotsByName(window)
+
+		self.btnClear.clicked.connect(lambda: self.clickBtnClear())
+
+	def clickBtnClear(self):
+		self.__clearAllText()
+
+	def __clearAllText(self):
+		self.txtX.clear()
+		self.txtY.clear()
+		self.txtAlpha.clear()
+		self.txtW1.clear()
+		self.txtW2.clear()
+		self.txtOutput.clear()
+		self.txtX.setFocus()
 
 	def retranslateUi(self, window):
 		_translate = QtCore.QCoreApplication.translate
