@@ -62,7 +62,10 @@ class Ui_window(object):
 		self.btnMohasebeh.clicked.connect(lambda: self.clickBtnMohasebeh())
 
 	def clickBtnMohasebeh(self):
-		answer = main(self.comboBox.currentText())
+		answer = main(gate=self.comboBox.currentText(), alpha=float(self.txtAlpha.text()), w1=float(self.txtW1.text()), w2=float(self.txtW2.text()))
+		matn = 'w1: ' + str(answer[0][0]) + '\n' + 'w2: ' + str(answer[0][1]) + '\n' + 'bias: ' + str(answer[1])
+		print(matn)
+		# print(answer)
 
 	def clickBtnClear(self):
 		self.__clearAllText()
